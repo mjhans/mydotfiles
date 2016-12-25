@@ -1,9 +1,6 @@
 mjhans dotfiles
 =================================
-
-> ### 천천히 채워가는 중 
-#### OS에 종속적이지 않게 만드는 것이 목표
-
+>#### OS에 종속적이지 않게 만드는 것이 목표
 install list
 -----------------------------------------------
 osx homerew install (http://brew.sh/index_ko.html)
@@ -12,6 +9,8 @@ osx homerew install (http://brew.sh/index_ko.html)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   </code>
 </pre>
+
+set .bashrc
 
 installed oh-my-zsh
 
