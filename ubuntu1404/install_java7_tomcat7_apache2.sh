@@ -5,5 +5,4 @@ sudo apt-get update
 sudo apt-get install -y oracle-java7-installer
 
 sudo apt-get install tomcat7
-
 sudo apt-get install apache2
