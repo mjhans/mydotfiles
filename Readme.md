@@ -10,9 +10,27 @@ osx homerew install (http://brew.sh/index_ko.html)
   </code>
 </pre>
 
-set .bashrc
+install iTerms2
++ iterm2 테마 설정 https://beomi.github.io/2017/07/07/Beautify-ZSH/
 
-installed oh-my-zsh
+
+install zsh
++ brew install zsh
+
+install oh-my-zsh
++ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+install powerline font
++ mkdir -p dev/gitRepo/
++ cd dev/gitRepo
++ git clone https://github.com/powerline/fonts.git --depth=1
++ cd fonts
++ ./install.sh
++ cd ..
++ rm -rf fonts 
+
+iterms colorset
+git clone https://github.com/mhartington/oceanic-next-iterm.git
 
 install tmux
 + tmux plugin manager
