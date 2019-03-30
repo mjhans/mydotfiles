@@ -41,6 +41,23 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'altercation/vim-colors-solarized'
+
+" 상태바
+Plugin 'vim-airline/vim-airline'
+" git 변경부분 보여주기
+Plugin 'airblade/vim-gitgutter'
+" 파일 탐색기
+Plugin 'scrooloose/nerdtree'
+" git branch 보여주기
+Plugin 'tpope/vim-fugitive'
+" 코드 문법 체크
+Plugin 'scrooloose/syntastic'
+" 파일 찾기
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -64,6 +81,20 @@ let NERDTreeWinPos = "left"
 nmap <F7> :NERDTree<CR>
 nmap <F8> :TlistToggle<CR>
 "
+" Use the Solarized Dark theme
+set background=dark
+" colorscheme jellybeans
+" solarized 셋팅
+colorscheme solarized
+let g:solarized_termtrans=1
+let g:solarized_termcolors= 16
+
+" 파일 검색시 인덱스 제외 설정
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|public$\|log$\|tmp$\|vendor$',
+  \ 'file': '\v\.(exe|so|dll)$'
+\ }
+
 filetype on
 
 " Tag list가 사용하는 ctags의 경로 설정
